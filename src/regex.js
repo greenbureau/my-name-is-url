@@ -5,7 +5,7 @@ const validTlds = tlds.concat(['local', 'dev']).join('|');
 const escapeChar = `\\`;
 const notWhitespaceCommaDoubleQuoteOrDot = `[^${escapeChar}s,"]`;
 const dot = `${escapeChar}.`;
-const hostnameChars = `[a-z0-9]`;
+var hostnameChars = '[a-z0-9|@]';
 const number = `[0-9]`;
 const endingChars = `${dot}?([${escapeChar}s<>",]|$)`;
 
